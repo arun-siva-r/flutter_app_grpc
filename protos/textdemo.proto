@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service TextService{
+  rpc GetText(Empty) returns (ResponseText){};
+}
+
+message Empty{}
+
+message ResponseText{
+  string textValue = 1;
+}
